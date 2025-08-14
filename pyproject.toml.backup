@@ -1,5 +1,5 @@
 [project]
-name = "iflow-mcp_windows-mcp"
+name = "windows-mcp"
 version = "0.1.0"
 description = "Lightweight MCP Server for interacting with Windows Operating System."
 authors = [
@@ -25,17 +25,3 @@ dependencies = [
     "requests>=2.32.3",
     "uiautomation>=2.0.24",
 ]
-
-[project.scripts]
-windows-mcp = "main:main"
-
-[build-system]
-requires = ["setuptools>=61.0", "wheel"]
-build-backend = "setuptools.build_meta"
-
-[tool.setuptools]
-py-modules = ["main"]
-
-[tool.setuptools.packages.find]
-where = ["."]
-include = ["src*"]
