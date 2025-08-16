@@ -215,3 +215,7 @@ def scrape_tool(url:str)->str:
 
 if __name__ == "__main__":
     mcp.run()
+
+def main():
+    """Entry point for the windows-mcp command line tool."""
+    mcp.run()
